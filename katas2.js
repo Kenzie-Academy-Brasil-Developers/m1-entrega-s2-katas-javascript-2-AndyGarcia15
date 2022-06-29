@@ -59,7 +59,7 @@ function fibonacci(n){
     
     let anterior = 0;
     let atual = 1;
-    let proximo = n;
+    let proximo = 0;
 
     for(i = 2; i <= n; i++){
         proximo = add(anterior,atual);
@@ -69,9 +69,9 @@ function fibonacci(n){
         resultado.push(proximo)       
        
     } 
-    return resultado
+    return resultado[n] 
 }
 console.log(fibonacci(7))
 
 // descomente a linha seguinte para testar sua função
-// console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
+ console.assert(fibonacci(7) === 13, 'A função fibonacci não está funcionando como esperado');
