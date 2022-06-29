@@ -69,7 +69,7 @@ function fibonacci(n){
         resultado.push(proximo)       
        
     } 
-    return resultado[n] 
+    return resultado
 }
 console.log(fibonacci(7))
 
